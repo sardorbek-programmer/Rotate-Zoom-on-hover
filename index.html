@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotate</title>
+    <style>
+        .gallery {
+            display: flex;
+            gap: 1rem;
+            display: inline-block;
+        }
+
+        .gallery>div {
+            flex: 1;
+            overflow: hidden;
+            border-radius: 1rem;
+            display: inline-block;
+        }
+
+        img {
+            transition: all .5s;
+            background-size: cover;
+            background-position: center;
+            padding-left: 80px;
+            padding-top: 60px;
+
+        }
+
+        img:hover {
+            transform: scale(1.4) rotate(12deg);
+        }
+    </style>
+</head>
+
+<body bgcolor="#141B4D">
+    <div class="gallery">
+        <div><img width="300" height="400" src="/img/1673404488_gas-kvas-com-p-anime-risunki-iz-raznikh-anime-3.jpg"
+                alt="image1">
+        </div>
+        <div><img width="300" height="400" class="img2" src="/img/33eca3d7e5e4c09f65722920d4ad1d02.jpg" alt="image2">
+        </div>
+        <div><img width="325" src="/img/5c3f1731f0a03c01e92c8d988aea264b.jpg" alt="image3"></div>
+    </div>
+</body>
+
+</html>
